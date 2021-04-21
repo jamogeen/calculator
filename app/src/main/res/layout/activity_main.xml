@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/revbut"
+    >
+
+
+    <TextView
+        android:id="@+id/inputext"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:background="#3B4E53"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/outputext"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/inputext"
+        android:background="#5A465E"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:gravity="end">
+
+    </TextView>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/sec1"
+    android:layout_below="@+id/outputext"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Clear"
+        android:onClick="onclear"
+        android:id="@+id/btnclean"
+        />
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+          android:layout_weight="1"
+          android:onClick="onmod"
+          android:id="@+id/btnmodule"
+        android:text="Modulus"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:onClick="ondel"
+        android:id="@+id/btndelete"
+        android:text="Del"/>
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/sec1"
+        android:id="@+id/sec2"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn7"
+            android:onClick="onseven"
+            android:text="7" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn8"
+            android:onClick="oneight"
+            android:text="8"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn9"
+            android:onClick="onnine"
+            android:text="9"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btnsubtract"
+            android:onClick="onsubtract"
+            android:text="-"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sec2"
+        android:id="@+id/sec3"
+        tools:context=".MainActivity">
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn4"
+            android:onClick="onfour"
+            android:text="4"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn5"
+            android:onClick="onfive"
+            android:text="5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btn6"
+            android:onClick="onsix"
+            android:text="6"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:id="@+id/btnmultipy"
+            android:onClick="onmultipy"
+            android:text="X"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sec3"
+        android:id="@+id/sec4"
+        tools:context=".MainActivity">
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btn1"
+            android:layout_weight="0.25"
+            android:onClick="onone"
+            android:text="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btn2"
+            android:onClick="ontwo"
+            android:layout_weight="0.25"
+            android:text="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btn3"
+            android:layout_weight="0.25"
+            android:onClick="onthree"
+            android:text="3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btndivide"
+            android:onClick="ondivide"
+            android:layout_weight="0.25"
+            android:text="/"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sec4"
+        android:id="@+id/sec5"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btndecial"
+            android:layout_weight="0.25"
+            android:onClick="ondecimal"
+            android:text="."
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btnzero"
+            android:layout_weight="0.25"
+            android:onClick="onzero"
+            android:text="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btnequal"
+            android:layout_weight="0.25"
+            android:onClick="onequal"
+            android:text="="/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.25"
+            android:onClick="onadd"
+            android:id="@+id/btnaddition"
+            android:text="+"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
